@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dans — Ecommerce</title>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Glide.js (for hero slider) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <!-- header & nav -->
+  <header class="header" id="header">
+    <div class="top-nav">
+      <div class="container top-nav-inner">
+        <p>Order Online Or Call Us: <strong>(001) 2222-55555</strong></p>
+        <nav aria-label="utility">
+          <ul class="utility d-flex">
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <div class="nav-center container">
+        <a href="/" class="logo" aria-label="Dans Home"><h1>Dans</h1></a>
+
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+          <i class="bx bx-menu-alt-left"></i>
+        </button>
+
+        <nav id="nav-list" class="nav-list" aria-label="Main navigation">
+          <ul class="nav-links d-flex">
+            <li><a class="nav-link" href="/">Home</a></li>
+            <li><a class="nav-link" href="product.html">Shop</a></li>
+            <li><a class="nav-link" href="#terms">Terms</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="icons d-flex" aria-hidden="false">
+          <a href="login.html" class="icon" aria-label="Login"><i class="bx bx-user"></i></a>
+          <button class="icon" aria-label="Search"><i class="bx bx-search"></i></button>
+          <a href="#" class="icon" aria-label="Wishlist"><i class="bx bx-heart"></i><span class="count">0</span></a>
+          <a href="cart.html" class="icon" aria-label="Cart"><i class="bx bx-cart"></i><span class="count">0</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero slider (Glide.js) -->
+    <div class="hero">
+      <div class="glide" id="glide1">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="hero-inner container">
+                <div class="hero-left">
+                  <span class="eyebrow">New Inspiration 2025</span>
+                  <h2>NEW COLLECTION</h2>
+                  <p>Trending picks for men’s and women’s style collections.</p>
+                  <a class="hero-btn" href="product.html">SHOP NOW</a>
+                </div>
+                <div class="hero-right">
+                  <img src="./images/hero-1.png" alt="New collection image 1">
+                </div>
+              </div>
+            </li>
+
+            <li class="glide__slide">
+              <div class="hero-inner container">
+                <div class="hero-left">
+                  <span class="eyebrow">Limited Drop</span>
+                  <h2>THE PERFECT MATCH</h2>
+                  <p>Curated styles chosen by designers.</p>
+                  <a class="hero-btn" href="product.html">SHOP NOW</a>
+                </div>
+                <div class="hero-right">
+                  <img src="./images/hero-2.png" alt="New collection image 2">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<" aria-label="Previous">‹</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categories -->
+  <section class="section section-category container" aria-label="Categories">
+    <div class="cat">
+      <img src="./images/cat3.jpg" alt="Women's wear">
+      <p>WOMEN'S WEAR</p>
+    </div>
+    <div class="cat">
+      <img src="./images/cat2.jpg" alt="Accessories">
+      <p>ACCESSORIES</p>
+    </div>
+    <div class="cat">
+      <img src="./images/cat1.jpg" alt="Men's wear">
+      <p>MEN'S WEAR</p>
+    </div>
+  </section>
+
+  <section class="section new-arrival container" aria-label="New arrivals">
+    <div class="title">
+      <h2>NEW ARRIVALS</h2>
+      <p>All the latest picked from designers of our store.</p>
+    </div>
+
+    <div class="product-center" id="products">
+      <!-- JS will render product cards here by calling /api/products -->
+    </div>
+  </section>
+
+  <footer class="footer container" aria-label="Footer">
+    <div class="socials">
+      <a aria-label="Github" href="#"><i class="bx bxl-github"></i></a>
+      <a aria-label="Twitter" href="#"><i class="bx bxl-twitter"></i></a>
+      <a aria-label="Pinterest" href="#"><i class="bx bxl-pinterest"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
